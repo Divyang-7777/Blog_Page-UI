@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: hwb(0 1% 99%);
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(183, 159, 215);
+    padding: 20px;
+
+
+}
+
+.navlink {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navlink li {
+    margin: 0 15px;
+}
+
+.navlink a {
+    text-decoration: none;
+    color: hwb(0 1% 99%);
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.navlink a:hover {
+    background-color: #d5a8df;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .navlink {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navlink li {
+        margin: 10px 0;
+    }
+}
+.content {
+  display: flex;
+  margin: 20px;
+}
+
+.blog-posts {
+  flex: 3;
+  margin-right: 20px;
+}
+
+.post {
+  background-color: #ecdaef;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.post img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.post h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.post p {
+  font-size: 16px;
+  color: #555;
+}
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+
+.sidebar {
+  flex: 1;
+  background-color: #ecdaef;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+
+.widget h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.widget ul {
+  list-style-type: none;
+}
+
+.widget ul li {
+  margin-bottom: 10px;
+}
+
+.widget ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: rgb(175, 165, 200);
+    color: hwb(0 1% 99%);
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 5px;
+  }
+  
+  .social-links li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+
+
+  .social-links a {
+    text-decoration: none;
+    color: hwb(0 1% 99%);
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .social-links {
+      margin-bottom: 10px;
+    }
+  
+    .social-links li {
+      margin: 0 10px;
+    }
+  }
